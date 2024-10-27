@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px; 
+}
+
+.radio-group label {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result, .error {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result {
+    color: #28a745;
+}
+
+.error {
+    color: #dc3545;
+}
